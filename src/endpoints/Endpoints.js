@@ -4,6 +4,9 @@ import ResetPasswordEndpoint from "endpoints/auth/resetPassword/ResetPasswordEnd
 import SendResetPasswordEmailEndpoint from "endpoints/auth/sendResetPasswordEmail/SendResetPasswordEmailEndpoint";
 import SignupEndpoint from "endpoints/auth/signup/SignupEndpoint";
 
+// Combine
+import CreateCombineEndpoint from "endpoints/combines/create/CreateCombineEndpoint";
+
 // User
 import GetAllUsersEndpoint from "endpoints/users/getAllUsers/GetAllUsersEndpoint";
 
@@ -21,6 +24,9 @@ class Endpoints {
     this._setEndpoint(ResetPasswordEndpoint);
     this._setEndpoint(SendResetPasswordEmailEndpoint);
     this._setEndpoint(SignupEndpoint);
+
+    // Combine
+    this._setEndpoint(CreateCombineEndpoint);
 
     // User
     this._setEndpoint(GetAllUsersEndpoint);
