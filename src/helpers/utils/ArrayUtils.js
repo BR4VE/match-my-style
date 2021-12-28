@@ -7,6 +7,16 @@ class ArrayUtils {
 
     return target.every((targetElement) => sourceMap[targetElement.toString()]);
   }
+
+  static getKeys(target, key) {
+    return target.reduce((keys, element) => {
+      const keyValue = element[key];
+      if (keyValue) {
+        keys.push(keyValue);
+      }
+      return keys;
+    }, []);
+  }
 }
 
 export default ArrayUtils;
