@@ -6,6 +6,7 @@ import SignupEndpoint from "endpoints/auth/signup/SignupEndpoint";
 
 // Combine
 import CreateCombineEndpoint from "endpoints/combines/create/CreateCombineEndpoint";
+import GetUserCombinesEndpoint from "endpoints/combines/getUserCombines/GetUserCombinesEndpoint";
 
 // User
 import GetAllUsersEndpoint from "endpoints/users/getAllUsers/GetAllUsersEndpoint";
@@ -27,6 +28,7 @@ class Endpoints {
 
     // Combine
     this._setEndpoint(CreateCombineEndpoint);
+    this._setEndpoint(GetUserCombinesEndpoint);
 
     // User
     this._setEndpoint(GetAllUsersEndpoint);
