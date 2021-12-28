@@ -17,6 +17,18 @@ class ArrayUtils {
       return keys;
     }, []);
   }
+
+  static mapify(arrayOfObjects, key) {
+    const map = {};
+    arrayOfObjects.forEach((object) => {
+      const value = object[key];
+      if (!value) {
+        return;
+      }
+      map[value] = object;
+    });
+    return map;
+  }
 }
 
 export default ArrayUtils;
