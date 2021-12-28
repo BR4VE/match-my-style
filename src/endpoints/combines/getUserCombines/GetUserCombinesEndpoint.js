@@ -7,7 +7,7 @@ export default {
   controller: GetUserCombinesEndpointController,
   credentialChecks: GetUserCombinesEndpointCredentialChecks,
   method: "get",
-  path: "/combines/getUserCombines",
+  path: "/combines/get-user-combines",
   validation: {
     page: {
       errorMessage: ErrorMessages.invalid("Page"),
