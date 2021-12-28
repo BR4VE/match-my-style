@@ -33,12 +33,5 @@ export default {
       },
       trim: true,
     },
-    phoneNumber: {
-      custom: CustomValidators.phoneNumber,
-      customSanitizer: CustomSanitizers.phoneNumber,
-      in: ["body"],
-      optional: { options: { nullable: true } },
-      trim: true,
-    },
   },
 };
